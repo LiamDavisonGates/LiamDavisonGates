@@ -153,166 +153,62 @@
     <!-- Content -->
     <div class="container mt-5">
       <div class="post">
+    <div>
+      <h1>Education</h1>
+      <p>This section lists my education/learning (both formal and informal) and outlines my journy to where I am now along with recomendadtion for great resorces I have found.</p>
 
-  <!-- <div class="header-bar">
-    <h1>LiamDavisonGates</h1>
-    <h2>Formal Education</h2>
-  </div> -->
-  <div>
-    <h1>Education</h1>
-    <p>This section lists my education/learning (both formal and informal) and outlines my journy to where I am now along with recomendadtion for great resorces I have found.</p>
-
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')">School</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Books</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Online Courses</button>
-    </div>
-
-    <div id="London" class="tabcontent">
-      <h3>This section lists my formal education</h3>
-      <div>
-        <p><b>Bioengineering, PhD</b></p>
-        <p>University of Edinbrugh, 2022</p>
-        <p><i>Thesis</i>: Detection and Monitoring of the Autophagy Response in Mammalian Cells Using Raman Spectroscopy and Machine Learning</p>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">School</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Books</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Online Courses</button>
       </div>
-      <div>
-        <p><b>Molecular Medicine, MSc</b></p>
-        <p>University of Essex, 2015</p>
-        <p><i>Thesis</i>: Optimisation of High Performance Liquid Chromatography Running Conditions for Amino Acid Analysis</p>
+
+      <div id="London" class="tabcontent">
+        <h3>This section lists my formal education</h3>
+        <div>
+          <p><b>Bioengineering, PhD</b></p>
+          <p>University of Edinbrugh, 2022</p>
+          <p><i>Thesis</i>: Detection and Monitoring of the Autophagy Response in Mammalian Cells Using Raman Spectroscopy and Machine Learning</p>
+        </div>
+        <div>
+          <p><b>Molecular Medicine, MSc</b></p>
+          <p>University of Essex, 2015</p>
+          <p><i>Thesis</i>: Optimisation of High Performance Liquid Chromatography Running Conditions for Amino Acid Analysis</p>
+        </div>
+        <div>
+          <p><b>Biomedical Science, BSc</b></p>
+          <p>University of Essex, 2014</p>
+          <p><i>Thesis</i>: Alignments of G-protein Coupled Receptors by Class</p>
+        </div>
       </div>
-      <div>
-        <p><b>Biomedical Science, BSc</b></p>
-        <p>University of Essex, 2014</p>
-        <p><i>Thesis</i>: Alignments of G-protein Coupled Receptors by Class</p>
+
+      <div id="Paris" class="tabcontent">
+        <h3>Book I have read and recomend</h3>
+        <p>Books.</p> 
       </div>
-    </div>
 
-    <div id="Paris" class="tabcontent">
-      <h3>Book I have read and recomend</h3>
-      <p>Books.</p> 
-    </div>
+      <div id="Tokyo" class="tabcontent">
+        <h3>Online courses/tutorial I have taken</h3>
+        <p>Online Courses.</p>
+      </div>
 
-    <div id="Tokyo" class="tabcontent">
-      <h3>Online courses/tutorial I have taken</h3>
-      <p>Online Courses.</p>
-    </div>
-
-    <script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+      <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
       }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-    </script>
-  </div>
-
-  <!-- <ul class="post-list">
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-        <a class="post-title" href="/LiamDavisonGates/assets/pdf/example_pdf.pdf">a post with redirect</a>
-        
-      </h3>
-      <p>you can also redirect to assets like pdf</p>
-      <p class="post-meta"> 1 min read &nbsp; &middot; &nbsp;
-        July 4, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/LiamDavisonGates/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/LiamDavisonGates/blog/2021/diagrams/">a post with diagrams</a>
-        
-      </h3>
-      <p>an example of a blog post with diagrams</p>
-      <p class="post-meta"> 3 min read &nbsp; &middot; &nbsp;
-        July 4, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/LiamDavisonGates/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li>
-
-    
-
-    
-    
-    
-    
-
-    <li>
-      <h3>
-        
-          <a class="post-title" href="/LiamDavisonGates/blog/2021/distill/">a distill-style blog post</a>
-        
-      </h3>
-      <p>an example of a distill-style blog post and main elements</p>
-      <p class="post-meta"> 7 min read &nbsp; &middot; &nbsp;
-        May 22, 2021
-      </p>
-      <p class="post-tags">
-        <a href="/LiamDavisonGates/blog/2021">
-          <i class="fas fa-calendar fa-sm"></i> 2021 </a>
-
-          
-
-          
-    </p>
-    </li> -->
-
-    
-  </ul>
-
-  <!-- <nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li><li class="page-item active"><a class="page-link" href="/LiamDavisonGates/blog/index.html" title="blog">1</a></li>
-      <li class="page-item "><a class="page-link" href="/LiamDavisonGates/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      <li class="page-item "><a class="page-link" href="/LiamDavisonGates/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      <li class="page-item "><a class="page-link" href="/LiamDavisonGates/blog/page/4/index.html" title="blog - page 4">4</a></li>
-      <li class="page-item ">
-      <a class="page-link" href="/LiamDavisonGates/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav> -->
-
+      </script>
+    </div>
+  <!-- </ul> -->
 </div>
 
     </div>
